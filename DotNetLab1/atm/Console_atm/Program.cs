@@ -6,19 +6,17 @@ using atm.Repositories;
 
 
 ConsoleRepo repo = new ConsoleRepo();
-Account account = new Account(1, "User1", "LUser2", new Card(1, "Universal",
-    new DateTime(2022,10,14), new DateTime(2020, 09, 14), 400, "441 421 4232", 4423),false);
-Account account2 = new Account(2, "User2", "LUser3", new Card(2, "Universal", new DateTime(2022, 11, 14),
-    new DateTime(2020, 09, 11), 300, "443 423 4233", 4123), false);
-
-List<Account> accounts = new List<Account>();
-accounts.Add(account);
-accounts.Add(account2);
-AccountRepo accountRepo = new AccountRepo(new AccountList()
+Bank bank = new Bank()
 {
-    Accounts = accounts
-});
-EmailSender email = new EmailSender();
+    Id = 1,
+    Code = 554023,
+    Name = "Privat24"
+};
+
+AccountRepo accountRepo = new AccountRepo(new ExapleUsers().InitUsers());
+AutomatedTellerMachine automatedTellerMachine = new AutomatedTellerMachine(1,15000,"Strit1");
+
+//EmailSender email = new EmailSender();
 int a = 1;
 Console.Write("Enter card number:");
 string cardNumber = Console.ReadLine();
@@ -27,10 +25,12 @@ int pin = int.Parse(Console.ReadLine());
 accountRepo.AuthorizationInfo += repo.Autorization;
 accountRepo.ErrorInfo += repo.Erorr;
 accountRepo.Transfer += repo.Transfer;
-accountRepo.AuthorizationInfo += email.Autorization;
+automatedTellerMachine.MachineHandlerInfo += repo.MachineOperation;
+//accountRepo.AuthorizationInfo += email.Autorization;
 accountRepo.Authorization(cardNumber, pin);
-var user = accountRepo.GetUserByCardNumber(cardNumber);
+Account user = accountRepo.GetUserByCardNumber(cardNumber);
 user.Info += repo.ShowMessage;
+bank.Transactions = new List<Transaction>();
 
 do
 {
@@ -50,6 +50,8 @@ do
             {
                 Console.Write("Enter sum:");
                 sum = double.Parse(Console.ReadLine());
+                var result = automatedTellerMachine.WithDrawMoney(sum);
+                if(result==true)
                 user.WithDraw(sum);
             }
             break;
@@ -61,6 +63,15 @@ do
                 sum = double.Parse(Console.ReadLine());
 
                 accountRepo.TranferMoney(user, receiver, sum);
+                bank.Transactions.Add(new Transaction()
+                {
+                    Id = new Random().Next(),
+                    Sender = user,
+                    Receiver = receiver,
+                    SendDate = DateTime.Now,
+                    Sum = sum,
+                    BankCode = bank.Code
+                });
             }
             break;
         case 4:
@@ -70,11 +81,14 @@ do
             break;
         case 5:
             {
+                user.Info -= repo.ShowMessage;
                 Console.Write("Enter card number:");
                 cardNumber = Console.ReadLine();
                 Console.Write("Enter pin:");
                 pin = int.Parse(Console.ReadLine());
                 accountRepo.Authorization(cardNumber, pin);
+                user = accountRepo.GetUserByCardNumber(cardNumber);
+                user.Info += repo.ShowMessage;
             }
             break;
         default:
@@ -83,11 +97,16 @@ do
             }
             break;
     }
-
+    Console.WriteLine("Press 0 to exit and any number to continue:");
     a = int.Parse(Console.ReadLine());
 
 } while (a != 0);
 
+Console.WriteLine("Transaction log");
+foreach(var item in bank.Transactions)
+{
+    Console.WriteLine($"Operation code:{item.Id}\nSender:{item.Sender.Name}\nReceiver:{item.Receiver.Name}\nTransaction sum:{item.Sum}\nDate:{item.SendDate}\n");
+}
 
 
 

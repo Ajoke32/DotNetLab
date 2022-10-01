@@ -32,5 +32,10 @@ namespace Console_atm
             Console.WriteLine($"You tranfer {e.Sum} to user {e.Receiver}");
         }
 
+        public void MachineOperation(AutomatedTellerMachine sender, EventMachineArgs e)
+        {
+            Console.WriteLine($"{e.Message}");
+        }
+
     }
 }

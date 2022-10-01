@@ -10,9 +10,15 @@ namespace atm.Models
 {
     public class Bank
     {
-        [Key]
         public int Id { get; set; }
         public string? Name { get; set; }
+
+        public int Code { get; set; }
+
+
+        public List<AutomatedTellerMachine>? Banks { get; set; }
+
+        public List<Transaction> Transactions { get; set; }
 
     }
 }
