@@ -2,18 +2,18 @@
 using atm.Models;
 using atm;
 using Console_atm;
-using atm.Repositories;
+
 
 
 ConsoleRepo repo = new ConsoleRepo();
-Bank bank = new Bank()
+Bank bank = new Bank(new ExapleUsers().InitUsers())
 {
     Id = 1,
     Code = 554023,
     Name = "Privat24"
 };
 
-AccountRepo accountRepo = new AccountRepo(new ExapleUsers().InitUsers());
+
 AutomatedTellerMachine automatedTellerMachine = new AutomatedTellerMachine(1,15000,"Strit1");
 
 //EmailSender email = new EmailSender();
@@ -22,13 +22,13 @@ Console.Write("Enter card number:");
 string cardNumber = Console.ReadLine();
 Console.Write("Enter pin:");
 int pin = int.Parse(Console.ReadLine());
-accountRepo.AuthorizationInfo += repo.Autorization;
-accountRepo.ErrorInfo += repo.Erorr;
-accountRepo.Transfer += repo.Transfer;
+bank.AuthorizationInfo += repo.Autorization;
+bank.ErrorInfo += repo.Erorr;
+bank.Transfer += repo.Transfer;
 automatedTellerMachine.MachineHandlerInfo += repo.MachineOperation;
 //accountRepo.AuthorizationInfo += email.Autorization;
-accountRepo.Authorization(cardNumber, pin);
-Account user = accountRepo.GetUserByCardNumber(cardNumber);
+bank.Authorization(cardNumber, pin);
+Account user = bank.GetUserByCardNumber(cardNumber);
 user.Info += repo.ShowMessage;
 bank.Transactions = new List<Transaction>();
 
@@ -59,10 +59,10 @@ do
             {
                 Console.Write("Enter receiver card number:");
                 string receverCar = Console.ReadLine();
-                var receiver = accountRepo.GetUserByCardNumber(receverCar);
+                var receiver = bank.GetUserByCardNumber(receverCar);
                 sum = double.Parse(Console.ReadLine());
 
-                accountRepo.TranferMoney(user, receiver, sum);
+                bank.TranferMoney(user, receiver, sum);
                 bank.Transactions.Add(new Transaction()
                 {
                     Id = new Random().Next(),
@@ -86,8 +86,8 @@ do
                 cardNumber = Console.ReadLine();
                 Console.Write("Enter pin:");
                 pin = int.Parse(Console.ReadLine());
-                accountRepo.Authorization(cardNumber, pin);
-                user = accountRepo.GetUserByCardNumber(cardNumber);
+                bank.Authorization(cardNumber, pin);
+                user = bank.GetUserByCardNumber(cardNumber);
                 user.Info += repo.ShowMessage;
             }
             break;

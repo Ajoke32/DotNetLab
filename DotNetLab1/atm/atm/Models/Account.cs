@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using atm.EventArgs;
-using atm.Repositories;
 
 
 namespace atm.Models

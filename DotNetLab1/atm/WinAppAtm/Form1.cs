@@ -1,24 +1,23 @@
 using atm.Models;
 using atm.EventArgs;
-using atm.Repositories;
 using atm;
 
 namespace WinAppAtm
 {
     public partial class Form1 : Form
     {
-        AccountRepo accountRepo;
+        Bank bank = new Bank(new ExapleUsers().InitUsers());
         public Form1()
         {
             InitializeComponent();
-            accountRepo = new AccountRepo(new ExapleUsers().InitUsers());
+            bank.AuthorizationInfo += this.Autorisation;
+            bank.ErrorInfo += this.Error;
         }
 
         private void CardNumberAutorizate_Click(object sender, EventArgs e)
         {
-            accountRepo.AuthorizationInfo += this.Autorisation;
-            accountRepo.ErrorInfo+=this.Error;
-            accountRepo.Authorization(CardNumber.Text,int.Parse(Pin.Text));
+            
+            bank.Authorization(CardNumber.Text,int.Parse(Pin.Text));
 
         }
 

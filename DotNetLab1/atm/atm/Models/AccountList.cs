@@ -13,11 +13,5 @@ namespace atm.Models
 
         public List<Account> Accounts { get; set; }
 
-
-        public List<Account> GetList()
-        {
-            return Accounts;
-        }
-
     }
 }

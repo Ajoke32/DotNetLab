@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using atm.Models;
 using atm.EventArgs;
 using WinAppAtm.WinAppRepo;
-using atm.Repositories;
 using atm;
 
 namespace WinAppAtm
@@ -19,7 +18,7 @@ namespace WinAppAtm
     {
         Account _account;
         WinRepository repo = new WinRepository();
-        AccountRepo _accountRepo;
+        Bank bank = new Bank(new ExapleUsers().InitUsers());
         public MainForm(Account account)
         {
             InitializeComponent();
@@ -27,9 +26,8 @@ namespace WinAppAtm
             _account.Info += repo.MoneyAction;
             Executing.Click += new EventHandler(MoneyOperation);
             TransferMoney.Click += new EventHandler(Transfer_Click);
-            _accountRepo = new AccountRepo(new ExapleUsers().InitUsers());
-            _accountRepo.Transfer += repo.Transfer;
-            _accountRepo.ErrorInfo += repo.Erorr;
+            bank.Transfer += repo.Transfer;
+            bank.ErrorInfo += repo.Erorr;
         }
 
         public void Action(object sender, EventArgs e)
@@ -87,9 +85,9 @@ namespace WinAppAtm
         }
         private void Transfer_Click(object sender, EventArgs e)
         {
-            var receiver = _accountRepo.GetUserByCardNumber(Input.Text);
+            var receiver = bank.GetUserByCardNumber(Input.Text);
             if (receiver != null)
-                _accountRepo.TranferMoney(_account, receiver, int.Parse(Sum.Text));
+                bank.TranferMoney(_account, receiver, int.Parse(Sum.Text));
         }
 
         private void GetBalance_Click(object sender, EventArgs e)
@@ -102,6 +100,11 @@ namespace WinAppAtm
             Form1 form = new Form1();
             this.Hide();
             form.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
