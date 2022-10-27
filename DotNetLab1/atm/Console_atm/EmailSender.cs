@@ -32,9 +32,9 @@ namespace Console_atm
         {
             GetSmtplient().Send("ipz211_bmm@student.ztu.edu.ua", "bekker.misha@gmail.com", "Bank operation", $"{e.Message}"); 
         }
-        public void Autorization(Account sender, AuthorizationEventArgs e)
+        public void Autorisation(Account sender, AuthorizationEventArgs e)
         {
-            GetSmtplient().Send("ipz211_bmm@student.ztu.edu.ua", "bekker.misha@gmail.com", "Autorization bank account",
+            GetSmtplient().Send("ipz211_bmm@student.ztu.edu.ua", "bekker.misha@gmail.com", "Autorisation bank account",
                 $"{e.Message} Signed in account {e.UserName}");
         }
         public void Erorr(ErorrArgs e)

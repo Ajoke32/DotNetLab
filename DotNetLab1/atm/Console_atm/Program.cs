@@ -22,11 +22,11 @@ Console.Write("Enter card number:");
 string cardNumber = Console.ReadLine();
 Console.Write("Enter pin:");
 int pin = int.Parse(Console.ReadLine());
-bank.AuthorizationInfo += repo.Autorization;
+bank.AuthorizationInfo += repo.Autorisation;
 bank.ErrorInfo += repo.Erorr;
 bank.Transfer += repo.Transfer;
 automatedTellerMachine.MachineHandlerInfo += repo.MachineOperation;
-//accountRepo.AuthorizationInfo += email.Autorization;
+//accountRepo.AuthorizationInfo += email.Autorisation;
 bank.Authorization(cardNumber, pin);
 Account user = bank.GetUserByCardNumber(cardNumber);
 user.Info += repo.ShowMessage;
@@ -34,7 +34,7 @@ bank.Transactions = new List<Transaction>();
 
 do
 {
-    Console.WriteLine("Choose action: 1.PutMoney, 2.WithDraw, 3.Transfer, 4.GetBalance, 5.Logout");
+    Console.WriteLine("Choose action: 1.PutMoney, 2.WithDraw, 3.Transfer, 4.GetBalance, 5.Logout 0.Exit");
     int action = int.Parse(Console.ReadLine());
     double sum = 0;
     switch (action)
@@ -98,9 +98,9 @@ do
             break;
     }
     Console.WriteLine("Press 0 to exit and any number to continue:");
-    a = int.Parse(Console.ReadLine());
 
-} while (a != 0);
+
+} while (action != 0);
 
 Console.WriteLine("Transaction log");
 foreach(var item in bank.Transactions)

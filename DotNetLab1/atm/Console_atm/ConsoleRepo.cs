@@ -14,7 +14,7 @@ namespace Console_atm
         {
             Console.WriteLine($"{e.Message}");
         }
-        public void Autorization(Account sender, AuthorizationEventArgs e)
+        public void Autorisation(Account sender, AuthorizationEventArgs e)
         {
             Console.WriteLine($"{e.Message}\nAccount owner:{e.UserName}\nCard:{e.CardName}, balance:{e.Balance}");
         }

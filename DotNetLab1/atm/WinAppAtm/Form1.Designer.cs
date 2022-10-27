@@ -36,9 +36,9 @@
             // 
             // CardNumberAutorizate
             // 
-            this.CardNumberAutorizate.Location = new System.Drawing.Point(334, 311);
+            this.CardNumberAutorizate.Location = new System.Drawing.Point(330, 298);
             this.CardNumberAutorizate.Name = "CardNumberAutorizate";
-            this.CardNumberAutorizate.Size = new System.Drawing.Size(94, 29);
+            this.CardNumberAutorizate.Size = new System.Drawing.Size(131, 29);
             this.CardNumberAutorizate.TabIndex = 0;
             this.CardNumberAutorizate.Text = "Next";
             this.CardNumberAutorizate.UseVisualStyleBackColor = true;
@@ -46,27 +46,27 @@
             // 
             // CardNumber
             // 
-            this.CardNumber.Location = new System.Drawing.Point(246, 207);
+            this.CardNumber.Location = new System.Drawing.Point(260, 204);
             this.CardNumber.Name = "CardNumber";
-            this.CardNumber.Size = new System.Drawing.Size(261, 27);
+            this.CardNumber.Size = new System.Drawing.Size(272, 27);
             this.CardNumber.TabIndex = 2;
+            this.CardNumber.TextChanged += new System.EventHandler(this.CardNumber_TextChanged);
             // 
             // Header
             // 
             this.Header.AutoSize = true;
             this.Header.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Header.Location = new System.Drawing.Point(207, 111);
+            this.Header.Location = new System.Drawing.Point(90, 108);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(355, 54);
+            this.Header.Size = new System.Drawing.Size(612, 54);
             this.Header.TabIndex = 3;
-            this.Header.Text = "Input card number";
-            this.Header.Click += new System.EventHandler(this.label1_Click);
+            this.Header.Text = "Input card number and password";
             // 
             // Pin
             // 
-            this.Pin.Location = new System.Drawing.Point(315, 253);
+            this.Pin.Location = new System.Drawing.Point(330, 247);
             this.Pin.Name = "Pin";
-            this.Pin.Size = new System.Drawing.Size(125, 27);
+            this.Pin.Size = new System.Drawing.Size(131, 27);
             this.Pin.TabIndex = 4;
             // 
             // Form1

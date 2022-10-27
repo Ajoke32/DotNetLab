@@ -39,7 +39,5 @@ namespace atm.Models
                 return false;
             }
         }
-
-        
     }
 }

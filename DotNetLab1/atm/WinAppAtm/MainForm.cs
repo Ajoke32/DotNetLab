@@ -18,16 +18,16 @@ namespace WinAppAtm
     {
         Account _account;
         WinRepository repo = new WinRepository();
-        Bank bank = new Bank(new ExapleUsers().InitUsers());
-        public MainForm(Account account)
+        Bank _bank;
+        public MainForm(Account account, Bank bank)
         {
             InitializeComponent();
             _account = account;
+            _bank = bank;
             _account.Info += repo.MoneyAction;
             Executing.Click += new EventHandler(MoneyOperation);
             TransferMoney.Click += new EventHandler(Transfer_Click);
             bank.Transfer += repo.Transfer;
-            bank.ErrorInfo += repo.Erorr;
         }
 
         public void Action(object sender, EventArgs e)
@@ -85,9 +85,9 @@ namespace WinAppAtm
         }
         private void Transfer_Click(object sender, EventArgs e)
         {
-            var receiver = bank.GetUserByCardNumber(Input.Text);
+            var receiver = _bank.GetUserByCardNumber(Input.Text);
             if (receiver != null)
-                bank.TranferMoney(_account, receiver, int.Parse(Sum.Text));
+                _bank.TranferMoney(_account, receiver, int.Parse(Sum.Text));
         }
 
         private void GetBalance_Click(object sender, EventArgs e)

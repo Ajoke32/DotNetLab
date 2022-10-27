@@ -6,30 +6,24 @@ namespace WinAppAtm
 {
     public partial class Form1 : Form
     {
-        Bank bank = new Bank(new ExapleUsers().InitUsers());
+        Bank bank =  new Bank(new ExapleUsers().InitUsers());
         public Form1()
         {
             InitializeComponent();
             bank.AuthorizationInfo += this.Autorisation;
             bank.ErrorInfo += this.Error;
         }
-
         private void CardNumberAutorizate_Click(object sender, EventArgs e)
         {
             
             bank.Authorization(CardNumber.Text,int.Parse(Pin.Text));
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
         public void Autorisation(Account sender, AuthorizationEventArgs e)
         {
             MessageBox.Show($"{e.Message}");
             this.Hide();
-            MainForm main = new MainForm(sender);
+            MainForm main = new MainForm(sender,bank);
             main.Show();
         }
         public void Error(ErorrArgs e)
@@ -38,6 +32,11 @@ namespace WinAppAtm
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CardNumber_TextChanged(object sender, EventArgs e)
         {
 
         }
