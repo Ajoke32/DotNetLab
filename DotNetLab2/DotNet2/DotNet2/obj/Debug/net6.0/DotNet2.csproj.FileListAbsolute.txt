@@ -1,0 +1,32 @@
+C:\Users\bekke\source\repos\DotNet2\DotNet2\bin\Debug\net6.0\DotNet2.exe
+C:\Users\bekke\source\repos\DotNet2\DotNet2\bin\Debug\net6.0\DotNet2.deps.json
+C:\Users\bekke\source\repos\DotNet2\DotNet2\bin\Debug\net6.0\DotNet2.runtimeconfig.json
+C:\Users\bekke\source\repos\DotNet2\DotNet2\bin\Debug\net6.0\DotNet2.dll
+C:\Users\bekke\source\repos\DotNet2\DotNet2\bin\Debug\net6.0\DotNet2.pdb
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.csproj.AssemblyReference.cache
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.AssemblyInfoInputs.cache
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.AssemblyInfo.cs
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.csproj.CoreCompileInputs.cache
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.dll
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\refint\DotNet2.dll
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.pdb
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\DotNet2.genruntimeconfig.cache
+C:\Users\bekke\source\repos\DotNet2\DotNet2\obj\Debug\net6.0\ref\DotNet2.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.csproj.AssemblyReference.cache
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.AssemblyInfoInputs.cache
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.AssemblyInfo.cs
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.csproj.CoreCompileInputs.cache
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\refint\DotNet2.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.pdb
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\DotNet2.exe
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\DotNet2.deps.json
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\DotNet2.runtimeconfig.json
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\DotNet2.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\DotNet2.pdb
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.genruntimeconfig.cache
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\ref\DotNet2.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\bin\Debug\net6.0\Microsoft.Toolkit.Diagnostics.dll
+C:\Users\bekke\OneDrive\Робочий стіл\cc\DotNetLab\DotNetLab2\DotNet2\obj\Debug\net6.0\DotNet2.csproj.CopyComplete
