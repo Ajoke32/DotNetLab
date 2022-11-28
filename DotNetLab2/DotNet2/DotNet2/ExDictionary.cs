@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Toolkit.Diagnostics;
 
+
 namespace DotNet2
 {
     public class ExDictionary<T, U, V> : IEnumerable
@@ -160,6 +161,49 @@ namespace DotNet2
         public IEnumerator GetEnumerator()
         {
             return new EntityEnumerator(this);
+        }
+        private class EtEnumerator : IEnumerator/*,IExDictionaryEnumerator*/
+        {
+            private Person[] person = { new Person(1, "a", 45), new Person(4, "b", 25), new Person(8, "C", 25) };
+            private int position;
+            private ExDictionaryElement<T, U, V> current;
+            private int index;
+
+
+
+            public EtEnumerator()
+            {
+                
+                position = -1;
+
+            }
+            public bool MoveNext()
+            {
+
+                position++;
+                return (position < person.Length);
+            }
+            public void Reset()
+            {
+                position = -1;
+                index = 0;
+
+            }
+            public void Dispose()
+            {
+
+            }
+            object IEnumerator.Current
+            {
+                get
+                {
+                    return person[position];
+                }
+            }
+        }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return new EtEnumerator();
         }
 
     }

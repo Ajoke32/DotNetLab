@@ -1,0 +1,12 @@
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\bin\Debug\net6.0\ProcesManager.deps.json
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\bin\Debug\net6.0\ProcesManager.dll
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\bin\Debug\net6.0\ProcesManager.pdb
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.csproj.AssemblyReference.cache
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.AssemblyInfoInputs.cache
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.AssemblyInfo.cs
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.csproj.CoreCompileInputs.cache
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.dll
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\refint\ProcesManager.dll
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ProcesManager.pdb
+C:\Users\bekke\source\repos\DotNetLab3\ProcesManager\obj\Debug\net6.0\ref\ProcesManager.dll

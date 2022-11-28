@@ -25,15 +25,15 @@ foreach(var item in arr2.Unique())
 
 var dict = new ExDictionary<string, string, int>()
 {
- { "User1","str3",1 }
+ { "User","str3",1 }
 };
 dict.Add("User", "string1", 2);
 dict.Add("User2", "string2", 4);
 Console.WriteLine();
 
-foreach (ExDictionaryElement<string, string, int> item in dict)
+foreach (var item in dict)
 {
-    Console.WriteLine($"Key:{item.Key} Fvalue:{item.FirstValue} Svalue:{ item.SecondValue}");
+    Console.WriteLine($"{item}");
 }
 
 

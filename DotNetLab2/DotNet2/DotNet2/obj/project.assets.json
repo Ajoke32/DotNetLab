@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\cc\\DotNetLab\\DotNetLab2\\DotNet2\\DotNet2.csproj",
+      "projectUniqueName": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\Sharp\\DotNetLab2\\DotNet2\\DotNet2\\DotNet2.csproj",
       "projectName": "DotNet2",
-      "projectPath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\cc\\DotNetLab\\DotNetLab2\\DotNet2\\DotNet2.csproj",
+      "projectPath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\Sharp\\DotNetLab2\\DotNet2\\DotNet2\\DotNet2.csproj",
       "packagesPath": "C:\\Users\\bekke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\cc\\DotNetLab\\DotNetLab2\\DotNet2\\obj\\",
+      "outputPath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\Sharp\\DotNetLab2\\DotNet2\\DotNet2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bekke\\AppData\\Roaming\\NuGet\\NuGet.Config",

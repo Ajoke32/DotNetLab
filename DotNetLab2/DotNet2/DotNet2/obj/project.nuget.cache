@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EXnkiHiWbrPgiFiC11EUHgw44tTxywQXw2D6juxr+R44VXlCG2KZIHX6I7dQ0F2G2uHDXrPa2tu3R+NeBv0QfA==",
+  "dgSpecHash": "SorXJmnQvmQUcNZUNISL5xeyfLHx3tj9OX5c7ySrJZYRjXuYZAGizxQiOJUiEIgFPrXjX2cUzzqcLGgAHsbZMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\cc\\DotNetLab\\DotNetLab2\\DotNet2\\DotNet2.csproj",
+  "projectFilePath": "C:\\Users\\bekke\\OneDrive\\Робочий стіл\\Sharp\\DotNetLab2\\DotNet2\\DotNet2\\DotNet2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bekke\\.nuget\\packages\\microsoft.toolkit.diagnostics\\7.1.2\\microsoft.toolkit.diagnostics.7.1.2.nupkg.sha512"
   ],

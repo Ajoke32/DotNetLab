@@ -1,0 +1,12 @@
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\bin\Debug\net6.0\FileWorkerLib.deps.json
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\bin\Debug\net6.0\FileWorkerLib.dll
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\bin\Debug\net6.0\FileWorkerLib.pdb
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.csproj.AssemblyReference.cache
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.AssemblyInfoInputs.cache
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.AssemblyInfo.cs
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.csproj.CoreCompileInputs.cache
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.dll
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\refint\FileWorkerLib.dll
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\FileWorkerLib.pdb
+C:\Users\bekke\source\repos\DotNetLab3\FileWorkerLib\obj\Debug\net6.0\ref\FileWorkerLib.dll
