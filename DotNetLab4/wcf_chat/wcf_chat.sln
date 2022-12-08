@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcf_chat", "wcf_chat\wcf_chat.csproj", "{BF144739-F2D0-4432-934F-99060DA959D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatHost", "ChatHost\ChatHost.csproj", "{2B70B324-F166-4A55-8662-6A18A61A2CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient\ChatClient.csproj", "{B9B8D276-1601-43D3-A797-9CF5C812E986}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF144739-F2D0-4432-934F-99060DA959D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF144739-F2D0-4432-934F-99060DA959D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF144739-F2D0-4432-934F-99060DA959D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF144739-F2D0-4432-934F-99060DA959D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B70B324-F166-4A55-8662-6A18A61A2CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B70B324-F166-4A55-8662-6A18A61A2CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B70B324-F166-4A55-8662-6A18A61A2CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B70B324-F166-4A55-8662-6A18A61A2CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9B8D276-1601-43D3-A797-9CF5C812E986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9B8D276-1601-43D3-A797-9CF5C812E986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9B8D276-1601-43D3-A797-9CF5C812E986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9B8D276-1601-43D3-A797-9CF5C812E986}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFD3636A-6B94-4F28-BC2E-61AF2C433412}
+	EndGlobalSection
+EndGlobal
